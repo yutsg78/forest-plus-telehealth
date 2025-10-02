@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Plus Telehealth | แบบคัดกรองและยินยอม PDPA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GOaawxjBMXmroTsMC/6bs6pSYd9J6Ndxw64Tc4uA0wo5J9y1WY5k7rPTqHJJ0XRg" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Forest Plus Telehealth</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                        <li class="nav-item"><a class="nav-link" href="how-it-works.html">วิธีการใช้งาน</a></li>
+                        <li class="nav-item"><a class="nav-link" href="conditions.html">ปัญหาที่รับบริการ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">แพ็กเกจราคา</a></li>
+                        <li class="nav-item"><a class="nav-link" href="book.html">จองคิว</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">คำถามที่พบบ่อย</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="container">
+        <h1 class="mt-4 mb-4">แบบคัดกรองก่อนรับบริการ</h1>
+        <p>โปรดกรอกข้อมูลให้ครบถ้วนเพื่อให้แพทย์สามารถประเมินอาการได้อย่างถูกต้อง ข้อมูลส่วนบุคคลของคุณจะถูกใช้เพื่อการให้บริการ Telehealth เท่านั้น และปฏิบัติตามกฎหมาย PDPA ของประเทศไทย</p>
+        <form id="screeningForm">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">ชื่อ-นามสกุล</label>
+                        <input type="text" class="form-control" id="fullName" required>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="mb-3">
+                        <label for="age" class="form-label">อายุ</label>
+                        <input type="number" class="form-control" id="age" min="0" required>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">เพศ</label>
+                        <select class="form-select" id="gender" required>
+                            <option value="">เลือกเพศ</option>
+                            <option value="ชาย">ชาย</option>
+                            <option value="หญิง">หญิง</option>
+                            <option value="อื่น ๆ">อื่น ๆ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">เบอร์โทรศัพท์</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">อีเมล</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="symptoms" class="form-label">อธิบายอาการที่ต้องการปรึกษา</label>
+                <textarea class="form-control" id="symptoms" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="history" class="form-label">ประวัติการรักษาหรือโรคประจำตัว (ถ้ามี)</label>
+                <textarea class="form-control" id="history" rows="3"></textarea>
+            </div>
+            <div class="form-section">
+                <h4>ข้อตกลงและการยินยอมใช้ข้อมูลส่วนบุคคล (PDPA)</h4>
+                <div class="pdpa-consent">
+                    <p><strong>วัตถุประสงค์</strong>: Forest Plus Telehealth จะเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคลของท่านเพื่อวัตถุประสงค์ในการให้บริการแพทย์ทางไกล ได้แก่ การประเมินอาการ การนัดหมาย การติดต่อสื่อสาร และการติดตามผลการรักษา</p>
+                    <p><strong>ประเภทข้อมูล</strong>: ชื่อ–นามสกุล, ข้อมูลการติดต่อ, ข้อมูลสุขภาพและประวัติการรักษา</p>
+                    <p><strong>การเก็บรักษา</strong>: ข้อมูลของท่านจะถูกเก็บไว้เท่าที่จำเป็นตามระยะเวลาที่กฎหมายกำหนดหรือจนกว่าจะยกเลิกการใช้บริการ</p>
+                    <p><strong>การเปิดเผยข้อมูล</strong>: เราอาจเปิดเผยข้อมูลของท่านแก่บุคลากรทางการแพทย์และผู้ให้บริการภายนอก (เช่น Calendly, Zoom และ Stripe) เพื่อประมวลผลการนัดหมายและการชำระเงิน ทั้งนี้จะจำกัดข้อมูลเท่าที่จำเป็น</p>
+                    <p><strong>สิทธิของท่าน</strong>: ท่านมีสิทธิขอเข้าถึง แก้ไข หรือลบข้อมูลส่วนบุคคล และสามารถถอนความยินยอมได้ทุกเมื่อ โดยติดต่อเจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคลของเรา</p>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="consentCheckbox" required>
+                    <label class="form-check-label" for="consentCheckbox">
+                        ข้าพเจ้าได้อ่านและยอมรับเงื่อนไขการใช้ข้อมูลส่วนบุคคลตามที่ระบุข้างต้น
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">ส่งแบบฟอร์ม</button>
+        </form>
+        <div id="formSuccess" class="alert alert-success mt-3 d-none" role="alert">
+            ขอบคุณสำหรับการส่งแบบฟอร์ม ระบบจะติดต่อกลับเพื่อยืนยันนัดหมาย
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Forest Plus Telehealth. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-ewE8DCo0gt2CxEcbPNhDLURamF4IuzWYae1v2lln7osMjlgp7Wr4uPfC3R3SpR61" crossorigin="anonymous"></script>
+    <script>
+    // Handle form submission: show success message and reset the form
+    document.getElementById('screeningForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById('formSuccess').classList.remove('d-none');
+        this.reset();
+    });
+    </script>
+</body>
+</html>
